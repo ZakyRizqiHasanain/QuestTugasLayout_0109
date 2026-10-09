@@ -30,11 +30,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun TampilanUtama(modifier: Modifier) {
+fun TampilanUtama(modifier: Modifier = Modifier) {
     Box(
-        modifier = Modifier.padding(top = 20.dp, bottom = 20.dp)
+        modifier = modifier
             .fillMaxSize()
             .background(colorResource(id = R.color.white))
+            .padding(top = 20.dp, bottom = 20.dp)
     ) {
         Column(
             modifier = Modifier
@@ -56,7 +57,14 @@ fun TampilanUtama(modifier: Modifier) {
                 color = colorResource(id = R.color.black)
             )
             Spacer(modifier = Modifier.height(20.dp))
-
+            CustomProfileCard(
+                namaRes = R.string.nama_bambang,
+                alamatRes = R.string.alamat_turi,
+                cardBgColorRes = R.color.card_grey,
+                alamatColorRes = R.color.text_yellow,
+                fontFamily = FontFamily.Cursive,
+                fontWeight = FontWeight.Normal
+            )
         }
     }
 }
@@ -92,6 +100,7 @@ fun CustomProfileCard(
                 contentDescription = stringResource(id = R.string.desc_logo_umy),
                 modifier = Modifier.size(62.dp)
             )
+            Spacer(modifier = Modifier.width(14.dp))
             Column(
                 modifier = Modifier.weight(1f)
             ) {
