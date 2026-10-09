@@ -7,4 +7,8 @@
 
     <string name="nama_bambang">Bambang Sumantri</string>
     <string name="alamat_turi">Turi, Sleman</string>
+
+    <string name="nama_gibran">Gibran Fathoni</string>
+    <string name="no_hp">085436874190</string>
+    <string name="alamat_kasihan">Kasihan, Bantul</string>
 </resources>
