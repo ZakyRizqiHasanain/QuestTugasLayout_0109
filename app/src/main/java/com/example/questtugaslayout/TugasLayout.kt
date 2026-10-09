@@ -65,6 +65,27 @@ fun TampilanUtama(modifier: Modifier = Modifier) {
                 fontFamily = FontFamily.Cursive,
                 fontWeight = FontWeight.Normal
             )
+            CustomProfileCard(
+                namaRes = R.string.nama_gibran,
+                phoneRes = R.string.no_hp,
+                alamatRes = R.string.alamat_kasihan,
+                cardBgColorRes = R.color.card_purple,
+                alamatColorRes = R.color.text_yellow
+            )
+            CustomProfileCard(
+                namaRes = R.string.nama_zhilal,
+                phoneRes = R.string.no_hp,
+                alamatRes = R.string.alamat_depok,
+                cardBgColorRes = R.color.card_blue,
+                alamatColorRes = R.color.white
+            )
+            CustomProfileCard(
+                namaRes = R.string.nama_ahmad,
+                phoneRes = R.string.no_hp,
+                alamatRes = R.string.alamat_gamping,
+                cardBgColorRes = R.color.card_green,
+                alamatColorRes = R.color.white
+            )
         }
     }
 }
