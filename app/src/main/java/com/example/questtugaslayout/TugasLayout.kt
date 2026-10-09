@@ -1,5 +1,7 @@
 package com.example.questtugaslayout
 
+import androidx.annotation.ColorRes
+import androidx.annotation.StringRes
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -14,6 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -48,4 +51,17 @@ fun TampilanUtama(modifier: Modifier) {
 
         }
     }
+}
+
+@Composable
+fun CustomProfileCard(
+    @StringRes namaRes: Int,
+    @StringRes alamatRes: Int,
+    @ColorRes cardBgColorRes: Int,
+    @ColorRes alamatColorRes: Int,
+    modifier: Modifier = Modifier,
+    @StringRes phoneRes: Int? = null,
+    fontFamily: FontFamily = FontFamily.Default,
+    fontWeight: FontWeight = FontWeight.Bold
+) {
 }
