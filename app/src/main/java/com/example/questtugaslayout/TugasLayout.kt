@@ -92,6 +92,29 @@ fun CustomProfileCard(
                 contentDescription = stringResource(id = R.string.desc_logo_umy),
                 modifier = Modifier.size(62.dp)
             )
+            Column(
+                modifier = Modifier.weight(1f)
+            ) {
+                Text(
+                    text = stringResource(id = namaRes),
+                    fontSize = if (fontFamily == FontFamily.Cursive) 22.sp else 18.sp,
+                    fontFamily = fontFamily,
+                    fontWeight = fontWeight,
+                    color = colorResource(id = R.color.white)
+                )
+                if (phoneRes != null) {
+                    Text(
+                        text = stringResource(id = phoneRes),
+                        fontSize = 13.sp,
+                        color = colorResource(id = R.color.text_cyan)
+                    )
+                }
+                Text(
+                    text = stringResource(id = alamatRes),
+                    fontSize = 13.sp,
+                    color = colorResource(id = alamatColorRes)
+                )
+            }
             Spacer(modifier = Modifier.width(14.dp))
             Image(
                 painter = painterResource(id = R.drawable.logo_umy),
