@@ -26,8 +26,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.questtugaslayout.ui.theme.QuestTugasLayoutTheme
 
 @Composable
 fun TampilanUtama(modifier: Modifier = Modifier) {
@@ -87,6 +89,19 @@ fun TampilanUtama(modifier: Modifier = Modifier) {
                 alamatColorRes = R.color.white
             )
         }
+        Text(
+            text = stringResource(id = R.string.text_copyright),
+            fontSize = 12.sp,
+            color = colorResource(id = R.color.black),
+            modifier = Modifier.align(Alignment.BottomCenter)
+        )
+    }
+}
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+fun TampilanUtamaPreview() {
+    QuestTugasLayoutTheme {
+        TampilanUtama()
     }
 }
 
